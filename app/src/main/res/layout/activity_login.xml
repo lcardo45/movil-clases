@@ -10,7 +10,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:onClick="goToMain"
+        android:text="Ingresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -54,9 +55,10 @@
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitleLogin"
-        app:layout_constraintVertical_bias="0.8"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -65,7 +67,8 @@
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        app:layout_constraintVertical_bias="0.127"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintVertical_bias="0.127" />
 </android.support.constraint.ConstraintLayout>
